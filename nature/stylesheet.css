@@ -1,0 +1,150 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  height: 82px;
+}
+
+img#nav-logo {
+  width: 85px;
+  height: auto;
+  margin-top: 26px;
+  margin-left: 50px;
+}
+
+ ul {
+  margin: 20px;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin-right: 50px;
+}
+
+li, a, h1, p {
+  text-decoration: none;
+  color: #091F3F;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 18px;
+  transition: 0.5s;
+}
+
+li a:hover {
+  transition: 0.5s;
+  color: #3685FB;
+}
+
+#intro-image {
+  position: relative;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+
+img#intro-image1 {
+  position: absolute;
+  left: 220px;
+  display: inline;
+  border-radius: 100px;
+  max-width: 200px;
+  height: auto;
+  margin-top: 90px;
+  border: solid 3px;
+  border-color: white;
+}
+
+img#intro-image2 {
+  border-radius: 150px;
+  max-width: 300px;
+  height: auto;
+}
+
+section#page-intro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+div#intro-text {
+  display: flex;
+  flex-direction: column;
+}
+
+h1#intro-text-title{
+  font-size: 60px;
+  width: 15ch;
+}
+
+p#intro-text-paragraph {
+  width: 60ch;
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.button {
+  display: flex;
+  background-color: #3685FB;
+  width: 150px;
+  height: 45px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+img#nature-logo {
+  max-width: 220px;
+  height: auto;
+}
+
+section#nossos-passeios {
+  margin-top: 80px;
+  text-align: center;
+}
+
+div#tabela-passeios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+img.passeio-item {
+  width: 310px;
+  height: auto;
+  margin: 15px 15px 0px 0px;
+}
+
+img.passeio-item:hover {
+  opacity: 80%;
+  transition: 0.5s;
+}
+
+div#todos-os-passeios-col1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
