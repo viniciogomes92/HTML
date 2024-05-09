@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Desktop/python"
+		},
+		{
+			"path": "../../estudo_js_ts"
+		},
+		{
+			"path": "../../../../../../xampp/htdocs/php_senac"
+		},
+		{
+			"path": "../../senac/html_css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "estudo_js_ts"
+	}
+}
