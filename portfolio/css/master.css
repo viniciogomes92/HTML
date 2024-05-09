@@ -3,10 +3,65 @@
   text-decoration: none;
   margin: 0px;
   padding: 0px;
+  list-style: none;
+}
+
+li, p, h1, h2, h3, a {
+  color: black;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
   justify-content: right;
+}
+
+.menu li {
+  padding: 20px;
+}
+
+.menu a {
+  font-weight: 600;
+}
+
+.intro {
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.intro h1 {
+  font-size: 44px;
+}
+
+.intro p {
+  font-size: 16px;
+}
+
+div#profile-image {
+  position: relative;
+}
+
+div.circulo {
+  background-color: #EDF7FA;
+  padding: 100px;
+  border-radius: 100px;
+  top: 10px;
+}
+
+img.profile-img {
+  max-width: 200px;
+  border-radius: 100px;
+  position: absolute;
+}
+
+
+
+a.button {
+  color: white;
+  background-color: #FF6464;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
 }
