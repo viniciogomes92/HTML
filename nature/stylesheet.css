@@ -109,15 +109,18 @@ section#nossos-passeios {
 
 div#grid-passeios {
   display: grid;
+  flex-wrap: wrap;
+  max-width: 100%;
+  grid-template-columns: repeat(2, 0fr);
+  justify-content: center;
 }
 
-img.img-passeio {
-  width: 310px;
+div.img-passeio {
   height: auto;
   margin: 15px 15px 0px 0px;
 }
 
-img.img-passeio:hover {
+div.img-passeio:hover {
   opacity: 80%;
   transition: 0.5s;
 }
@@ -178,6 +181,10 @@ section.quem-somos {
   section#nossos-passeios {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  div#grid-passeios {
+    grid-template-columns: repeat(1, 0fr);
     align-items: center;
   }
 }
