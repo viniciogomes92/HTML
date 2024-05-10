@@ -171,6 +171,7 @@ section.quem-somos {
   section#page-intro {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   div#intro-text {
     flex-direction: column;
