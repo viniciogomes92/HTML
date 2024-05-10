@@ -107,20 +107,17 @@ section#nossos-passeios {
   text-align: center;
 }
 
-div#tabela-passeios {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
+div#grid-passeios {
+  display: grid;
 }
 
-img.passeio-item {
+img.img-passeio {
   width: 310px;
   height: auto;
   margin: 15px 15px 0px 0px;
 }
 
-img.passeio-item:hover {
+img.img-passeio:hover {
   opacity: 80%;
   transition: 0.5s;
 }
