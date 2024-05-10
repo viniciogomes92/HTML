@@ -176,3 +176,16 @@ table {
   padding: 30px 20px 30px 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+section.quem-somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.quem-somos-text {
+  text-align: justify;
+  width: 90ch;
+}
