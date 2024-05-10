@@ -105,19 +105,14 @@ img#nature-logo {
 section#nossos-passeios {
   margin-top: 80px;
   text-align: center;
-  max-width: 100%;
+  width: 100%;
 }
 
 div#grid-passeios {
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(2, 0fr);
+  grid-template-columns: repeat(2, 0.2fr);
   justify-content: center;
-}
-
-div.img-passeio {
-  height: auto;
-  margin: 15px 15px 0px 0px;
 }
 
 div.img-passeio:hover {
