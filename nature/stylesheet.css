@@ -39,7 +39,7 @@ li {
   margin-right: 50px;
 }
 
-li, a, h1, p {
+li, a, p, h1, h2, td {
   text-decoration: none;
   color: #091F3F;
   font-family: "Montserrat", sans-serif;
@@ -154,4 +154,24 @@ div#todos-os-passeios-col1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
+}
+
+.tabela-funciomento {
+  background-color: #F1F1F1;
+}
+
+.tabela-horarios td {
+  text-align: center;
+  background-color: #D9D9D9;
+  padding: 10px 100px 10px 100px;
+  border-radius: 5px;
+}
+
+table {
+  border-spacing: 40px 5px;
+  border-radius: 5px;
+  background-color: #F1F1F1;
+  padding: 30px 20px 30px 20px;
+  box-shadow: grey;
 }
