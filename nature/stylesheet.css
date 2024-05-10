@@ -53,27 +53,8 @@ li a:hover {
 }
 
 #intro-image {
-  position: relative;
-  margin-left: 10%;
-  margin-right: 15%;
-}
-
-img#intro-image1 {
-  position: absolute;
-  left: 220px;
-  display: inline;
-  border-radius: 100px;
-  max-width: 200px;
-  height: auto;
-  margin-top: 90px;
-  border: solid 3px;
-  border-color: white;
-}
-
-img#intro-image2 {
-  border-radius: 150px;
   max-width: 300px;
-  height: auto;
+  margin-right: 50px;
 }
 
 section#page-intro {
@@ -144,12 +125,6 @@ img.passeio-item:hover {
   transition: 0.5s;
 }
 
-div#todos-os-passeios-col1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .funcionamento {
   display: flex;
   flex-direction: column;
@@ -187,5 +162,19 @@ section.quem-somos {
 
 .quem-somos-text {
   text-align: justify;
-  width: 90ch;
+}
+
+@media (max-width: 650px) {
+  .menu {
+    display: none;
+  }
+  section#page-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  div#intro-text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
