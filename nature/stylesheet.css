@@ -181,4 +181,11 @@ section.quem-somos {
     grid-template-columns: repeat(1, 0fr);
     align-items: center;
   }
+
+  form.Contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
