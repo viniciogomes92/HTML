@@ -182,7 +182,7 @@ section.quem-somos {
     align-items: center;
   }
 
-  form.Contato {
+  form.Contato label input {
     display: flex;
     flex-direction: column;
     justify-content: center;
