@@ -200,6 +200,14 @@ input#btn-form {
   border: none;
 }
 
+section.reserva {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 20%;
+}
+
 @media (max-width: 650px) {
   .menu {
     display: none;
