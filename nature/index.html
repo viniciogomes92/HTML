@@ -25,7 +25,7 @@
         <img src="img/intro_img.png">
       </div>
       <div id="intro-text">
-        <h1 id="intro-text-title">Curta suas férias com <a href="#"><img src="img/Logo.png" id="nature-logo" alt="Logo"></a></h1>
+        <h1 id="intro-text-title">Curta suas férias com <img src="img/Logo.png" id="nature-logo-text" alt="Logo"></h1>
         <p id="intro-text-paragraph">Are you planning a vacation to enjoy your free time? Looking for a place to explore, eat and enjoy your vacation with your loved ones or Are you a solo thaveler who thavels often for a wonderful experiences.</p>
         <a href="reserva.html" class="button">Reserve!</a>
     </section>
@@ -82,7 +82,9 @@
       </div>
     </section>
     <section class="contato" id="contato">
+      
       <form action="mailer.php" method="post" class="Contato">
+        <h1 style="text-align: center;">Contato</h1>
         <label for="fname" class="label-form">Nome:</label>
         <input type="text" id="fname" name="fname" class="campo-form">
         <label for="ftel" class="label-form">Telefone:</label>
@@ -90,7 +92,7 @@
         <label for="fmail" class="label-form">E-mail:</label>
         <input type="email" name="fmail" id="fmail" class="campo-form">
         <label for="fmensage" class="label-form">Mensagem:</label>
-        <input type="text" name="fmensage" id="fmensage" class="campo-form">
+        <textarea class="campo-form" name="fmensage" id="fmensage" rows="3"></textarea>
         <input type="submit" value="Enviar" class="button" id="btn-form">
       </form> 
     </section>

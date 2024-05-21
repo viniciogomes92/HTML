@@ -77,6 +77,10 @@ h1#intro-text-title{
   width: 15ch;
 }
 
+img#nature-logo-text {
+  width: 200px;
+}
+
 p#intro-text-paragraph {
   width: 60ch;
   font-weight: 600;
@@ -111,7 +115,7 @@ section#nossos-passeios {
 div#grid-passeios {
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(2, 0.2fr);
+  grid-template-columns: repeat(2, 0.13fr);
   justify-content: center;
 }
 
