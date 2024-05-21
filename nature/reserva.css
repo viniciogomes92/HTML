@@ -1,0 +1,47 @@
+@import url("stylesheet.css");
+
+section.reserva {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+div.form-reserva {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+div.form-reserva > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.form-reserva > div > select {
+  width: 10%;
+  display: flex;
+  justify-content: left;
+}
+
+div.form-reserva > div > textarea {
+  width: 18%;
+}
+
+input#fdataNascimento {
+  width: 10%;
+  margin: 0 auto;
+}

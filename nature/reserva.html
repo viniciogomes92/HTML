@@ -3,16 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="reserva.css">
   <title>Faça sua Reserva</title>
 </head>
 <body>
+  <header>
+    <nav class="menu">
+      <a href="#"><img src="img/Logo.png" id="nav-logo" alt="Logo"></a>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#quem-somos">Quem Somos</a></li>
+        <li><a href="index.html#nossos-passeios">Passeios</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
   <section class="reserva">
-    <form action="reserva.php" method="post">
-      <label for="fnome" class="label-form">Nome:</label>
-      <input type="text" name="fnome" id="fnome" class="campo-form">
-      <label for="fProfilePic" class="label-form">Foto de Perfil:</label>
-      <input type="file" accept="image/jpeg, image/png" name="fProfilePic" id="fProfilePic">
+      <form action="reserva.php" method="post">
+      <div class="logo">
+        <img src="./img/Logo.png" alt="Logo Nature">
+      </div>
+      <div class="form-reserva">
+        <div>
+          <label for="fnome" class="label-form">Nome:</label>
+          <input type="text" name="fnome" id="fnome" class="campo-form" required>
+        </div>
+        <div>
+          <label for="fProfilePic" class="label-form">Foto de Perfil:</label>
+          <input type="file" accept="image/jpeg, image/png" name="fProfilePic" id="fProfilePic">
+        </div>
+        <div>
+          <label for="ftel" class="label-form">Telefone:</label>
+          <input type="tel" name="ftel" id="ftel" class="campo-form" required>  
+        </div>
+        <div>
+          <label for="fmail" class="label-form">E-mail:</label>
+        <input type="email" name="fmail" id="fmail" class="campo-form">
+        </div>
+        <div>
+          <label for="fdataNascimento" class="label-form date-form">Data de Nascimento:</label>
+          <input type="date" name="fdataNascimento" id="fdataNascimento" class="campo-form">
+        </div>
+        <div>
+          <label for="fcpf" class="label-form">CPF:</label>
+        <input type="text" name="fcpf" id="fcpf" class="campo-form">
+        </div>
+        <div>
+          <label for="fsexo" class="label-form">Sexo:</label>
+          <select name="fsexo" id="fsexo" required>
+            <option value="">Selecione Sexo</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+          </select>
+        </div>
+        <div>
+          <label for="fendereco" class="label-form">Endereço:</label>
+          <input type="text" name="fendereco" id="fendereco" class="campo-form">
+        </div>
+        <div>
+          <label for="fUF" class="label-form">UF:</label>
+          <select name="fUF" id="fUF" required>
+            <option value="">Selecione UF</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+        <div>
+          <label for="fsusgestao" class="label-form">Susgestão:</label>
+          <textarea class="campo-form" name="fsugestao" id="fsugestao" rows="3"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Enviar" class="button" id="btn-form">
+        </div>
+      </div>
     </form>
   </section>
 </body>

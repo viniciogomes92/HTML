@@ -1,4 +1,4 @@
-html {
+/* html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-}
+} */
 
 .menu {
   display: flex;
@@ -125,7 +125,7 @@ div.img-passeio:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin: 0 auto;
 }
 
 .tabela-funciomento {
@@ -152,17 +152,18 @@ section.quem-somos {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin: 0 auto;
 }
 
 .quem-somos-text {
   text-align: justify;
+  max-width: 120ch;
 }
 
 section.Contato {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin: 50px 0px 50px 0px;
 }
 
 form.Contato {
@@ -170,7 +171,7 @@ form.Contato {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  width: 20%;
+  margin: 0 auto;
 }
 
 form.Contato > input#btn-form {
@@ -200,12 +201,12 @@ input#btn-form {
   border: none;
 }
 
-section.reserva {
+section.contato {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  width: 20%;
+  margin: 0 auto;
 }
 
 @media (max-width: 650px) {
@@ -216,6 +217,7 @@ section.reserva {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
   div#intro-text {
     flex-direction: column;
@@ -225,9 +227,11 @@ section.reserva {
   section#nossos-passeios {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   div#grid-passeios {
     grid-template-columns: repeat(1, 0fr);
     align-items: center;
+    width: 100%;
   }
 }
