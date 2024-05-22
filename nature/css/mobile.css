@@ -1,0 +1,59 @@
+/* Ordena os links e define a cor do menu */
+.menu-mobile {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estiliza os links do menu */
+.menu-mobile div a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Altera as cores dos links ao passar o mouse por cima */
+.menu-mobile div a:hover {
+  color: #3685FB;
+}
+
+/* Adiciona a classe "active" para marcar a página atual */
+.menu-mobile div a.active {
+  background-color: white;
+  color: #3685FB;
+}
+
+/* Oculta o menu Hamburguer */
+.menu-mobile .icon {
+  display: none;
+}
+
+/* Quando a resolução for menor que 600px, oculta os links e exibe o menu hamburguer */
+@media screen and (max-width: 600px) {
+  .menu-mobile div a:not(:first-child) {display: none;}
+  .menu-mobile div.mobile-links a {display: none;}
+  .menu-mobile div a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* A classe "responsive" é adicionada à classe "menu-mobile" com JavaScript quando o usuário clica no menu Hamburguer. */
+@media screen and (max-width: 600px) {
+  .menu-mobile.responsive {position: relative;}
+  .menu-mobile.responsive div a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu-mobile.responsive div a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

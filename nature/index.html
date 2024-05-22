@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Zona Oeste Tour</title>
   </head>
   <body>
     <header>
-      <nav class="menu">
+      <!-- <nav class="menu">
         <a href="index.html"><img src="img/Logo.png" id="nav-logo" alt="Logo"></a>
         <ul class="navbar">
           <li><a href="index.html">Home</a></li>
@@ -18,6 +21,21 @@
           <li><a href="#contato">Contato</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
+      </nav> -->
+      <nav class="menu-mobile" id="meuMenu-mobile">
+        <div>
+          <a href="index.html"><img src="img/Logo.png" class="active" id="nav-logo" alt="Logo"></a>
+        </div>
+        <div class="mobile-links">
+          <a href="index.html">Home</a>
+          <a href="#quem-somos">Quem Somos</a>
+          <a href="#nossos-passeios">Passeios</a>
+          <a href="#contato">Contato</a>
+          <a href="#blog">Blog</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </nav>
     </header>
     <section id="page-intro">
@@ -96,5 +114,6 @@
         <input type="submit" value="Enviar" class="button" id="btn-form">
       </form> 
     </section>
+    <script type="text/javascript" src="./js/master.js"></script>
   </body>
 </html>
