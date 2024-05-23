@@ -1,4 +1,5 @@
 @import url("stylesheet.css");
+@import url("mobile.css");
 
 section.reserva {
   display: flex;
@@ -12,7 +13,7 @@ div.titulo {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 100%;
 }
 
 div.form-reserva {
@@ -28,20 +29,18 @@ div.form-reserva > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-div.form-reserva > div > select {
-  width: 10%;
-  display: flex;
-  justify-content: left;
-}
-
-div.form-reserva > div > textarea {
-  width: 18%;
-}
-
-input#fdataNascimento {
-  width: 10%;
+  width: 40%;
   margin: 0 auto;
+}
+
+fieldset {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+div.div-btnEnviar > input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }

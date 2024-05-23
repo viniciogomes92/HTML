@@ -1,3 +1,13 @@
+:root{
+  --fonte:"Montserrat";
+  --branco-principal: #ffff;
+  --preto: #000000;
+  --cinza: #8E8E8E;
+  --branco2: #F0F2F5;
+  --azul: #0982FE;
+  --roxo: #A18CD1;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -9,23 +19,20 @@ body {
 }
 
 ul {
-  margin: 20px;
-  height: 50px;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-
-li {
-  margin-right: 50px;
+  margin: 0;
 }
 
 li, a, p, h1, h2, td, input, label {
   text-decoration: none;
   color: #091F3F;
   font-family: "Montserrat", sans-serif;
-  font-weight: 18px;
   transition: 0.5s;
+  list-style: none;
+}
+
+#nav-logo {
+  width: 120px;
+  height: auto;
 }
 
 li a:hover {
@@ -34,36 +41,38 @@ li a:hover {
 }
 
 #intro-image {
-  max-width: 300px;
-  margin-right: 50px;
+  padding-left: 20%;
+  margin-right: 5%;
+}
+
+.intro-image {
+  width: 400px;
 }
 
 section#page-intro {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
-  align-items: center;
   margin-top: 80px;
-  justify-content: center;
 }
 
 div#intro-text {
   display: flex;
   flex-direction: column;
+  padding-right: 20%;
 }
 
 h1#intro-text-title{
   font-size: 60px;
-  width: 15ch;
 }
 
 img#nature-logo-text {
-  width: 200px;
+  text-align: justify;
+  width: 300px;
+  height: auto;
 }
 
 p#intro-text-paragraph {
-  width: 60ch;
   font-weight: 600;
   opacity: 50%;
 }
@@ -87,16 +96,52 @@ img#nature-logo {
   height: auto;
 }
 
+.video{
+  margin-top: 50px;
+  background-color: var(--roxo);
+  width: 99%;
+  height: 262.93px;
+  margin-bottom: 50px;
+}
+
+.video-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
 section#nossos-passeios {
-  margin-top: 80px;
+  margin-top: 200px;
   text-align: center;
   width: 100%;
+}
+
+.titulo-img-passeio-row1 {
+  position: absolute;
+}
+
+.titulo-img-passeio-row2 {
+  position: absolute;
+}
+
+.titulo-img-passeio-row1 > p {
+  padding: 260px 0px 0px 25px;
+  color: white;
+  font-weight: 600;
+}
+
+.titulo-img-passeio-row2 > p {
+  padding: 5px 0px 0px 25px;
+  color: white;
+  font-weight: 600;
 }
 
 div#grid-passeios {
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(2, 0.13fr);
+  grid-template-columns: repeat(2, 0fr);
+  grid-gap: 30px;
   justify-content: center;
 }
 
@@ -111,10 +156,15 @@ div.img-passeio:hover {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .tabela-funciomento {
   background-color: #F1F1F1;
+}
+
+section.funcionamento-mobile {
+  display: none;
 }
 
 .tabela-horarios td {
@@ -128,7 +178,7 @@ table {
   border-spacing: 40px 5px;
   border-radius: 5px;
   background-color: #F1F1F1;
-  padding: 30px 20px 30px 20px;
+  padding: 30px 60px 30px 60px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -141,14 +191,24 @@ section.quem-somos {
 }
 
 .quem-somos-text {
+  display: flex;
+  flex-wrap: wrap;
   text-align: justify;
-  max-width: 120ch;
+  width: 50%;
 }
 
-section.Contato {
+section.contato {
   display: flex;
-  justify-content: center;
-  margin: 50px 0px 50px 0px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 60%;
+  background-color: #F1F1F1;
+  padding-bottom: 50px;
+}
+
+section.contato > iframe {
+  margin: 50px 50px 0px 0px;
 }
 
 form.Contato {
@@ -156,7 +216,6 @@ form.Contato {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  margin: 0 auto;
 }
 
 form.Contato > input#btn-form {
@@ -167,6 +226,7 @@ input.campo-form {
   border: none;
   border-bottom: 1px solid black;
   margin-bottom: 5px;
+  background-color: #F1F1F1;
 }
 
 input#fmensage {
@@ -182,27 +242,73 @@ input#btn-form {
   border: none;
 }
 
-section.contato {
+.footer{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  margin: 0 auto;
+  align-items: start;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 
-@media (max-width: 650px) {
+.support{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  font-family: var(--fonte);
+}
+
+.support>p{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.li-footer{
+  font-size: 13px;
+}
+
+.community{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  font-family: var(--fonte);
+}
+
+.about{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  font-family: var(--fonte);
+}
+
+.footer-logo{
+  width: 15%;
+  font-family: var(--fonte);
+  font-size: 10px;
+  margin-top: 1.5rem;
+}
+
+.footer-img{
+  width: 50%;
+  height: 50%;
+}
+
+@media (max-width: 820px) {
 
   section#page-intro {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 0 auto;
   }
 
   div#intro-text {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0% 10% 0% 10%;
   }
 
   h1#intro-text-title{
@@ -216,6 +322,7 @@ section.contato {
 
   .quem-somos-text {
     text-align: justify;
+    width: 80%;
   }
 
   section#nossos-passeios {
@@ -223,9 +330,60 @@ section.contato {
     flex-direction: column;
     width: 100%;
   }
+
   div#grid-passeios {
     grid-template-columns: repeat(1, 0fr);
     align-items: center;
     width: 100%;
+  }
+
+  section.funcionamento {
+    display: none;
+  }
+
+  section.funcionamento-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .tabela-horarios-mobile td {
+    text-align: center;
+    background-color: #D9D9D9;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+
+  }
+
+  div.tabela-horarios-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  table {
+    border-spacing: 40px 5px;
+    border-radius: 5px;
+    background-color: #F1F1F1;
+    padding: 30px 60px 30px 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  section.contato {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+
+  section.contato > iframe {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  section.contato > form {
+    align-items: center;
   }
 }

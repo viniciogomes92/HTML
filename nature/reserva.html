@@ -4,19 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reserva.css">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <link rel="stylesheet" href="./css/mobile.css">
   <title>Faça sua Reserva</title>
 </head>
 <body>
   <header>
-    <nav class="menu">
-      <a href="#"><img src="img/Logo.png" id="nav-logo" alt="Logo"></a>
-      <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#quem-somos">Quem Somos</a></li>
-        <li><a href="index.html#nossos-passeios">Passeios</a></li>
-        <li><a href="index.html#contato">Contato</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+    <nav class="menu-mobile" id="meuMenu-mobile">
+      <div>
+        <a href="index.html"><img src="img/Logo.svg" class="active" id="nav-logo" alt="Logo"></a>
+      </div>
+      <div class="mobile-links">
+        <a href="index.html">Home</a>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#nossos-passeios">Passeios</a>
+        <a href="#contato">Contato</a>
+        <a href="#blog">Blog</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </nav>
   </header>
   <section class="reserva">
@@ -94,15 +101,36 @@
             <option value="TO">Tocantins</option>
           </select>
         </div>
-        <div>
+        <fieldset>
+          <legend>Choose your monster's features:</legend>
+        
+          <div>
+            <input type="checkbox" id="chkPaoDeAcucar" name="chkPaoDeAcucar" />
+            <label for="chkPaoDeAcucar">Pão de Açucar</label>
+          </div>
+          <div>
+            <input type="checkbox" id="chkAsadelta" name="chkAsadelta" />
+            <label for="chkAsadelta">Asadelta</label>
+          </div>
+          <div>
+            <input type="checkbox" id="chkEscalada" name="chkEscalada" />
+            <label for="chkEscalada">Escalada</label>
+          </div>
+          <div>
+            <input type="checkbox" id="chkPaqueta" name="chkPaqueta" />
+            <label for="chkPaqueta">Asadelta</label>
+          </div>
+        </fieldset>
+        <div class="div-sugestao">
           <label for="fsusgestao" class="label-form">Susgestão:</label>
           <textarea class="campo-form" name="fsugestao" id="fsugestao" rows="3"></textarea>
         </div>
-        <div>
+        <div class="div-btnEnviar">
           <input type="submit" value="Enviar" class="button" id="btn-form">
         </div>
       </div>
     </form>
   </section>
+  <script type="text/javascript" src="./js/master.js"></script>
 </body>
 </html>
