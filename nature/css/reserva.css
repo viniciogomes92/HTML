@@ -33,6 +33,10 @@ div.form-reserva > div {
   margin: 0 auto;
 }
 
+div.form-reserva > div input {
+  background-color: white;
+}
+
 fieldset {
   width: 50%;
   height: auto;
