@@ -230,6 +230,10 @@ form.Contato {
   justify-content: center;
 }
 
+form.Contato > h2 {
+  text-align: center;
+}
+
 form.Contato > input#btn-form {
   justify-content: center;
 }
