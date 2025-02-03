@@ -94,7 +94,7 @@ h1.title {
   font-size: 101px;
 }
 
-.text {
+.text p {
   color: #C7C7C7;
   font-family: "Manrope", serif;
   font-optical-sizing: auto;
@@ -103,6 +103,7 @@ h1.title {
   font-size: 18px;
   text-align: justify;
   width: 100%;
+  text-indent: 50px;
 }
 
 div.links {
@@ -184,6 +185,7 @@ div.project-text p {
   font-style: normal;
   font-size: 18px;
   text-align: justify;
+  text-indent: 50px;
 }
 
 div.project-links {

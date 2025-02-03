@@ -11,9 +11,9 @@
     <a class="title logo" href="#">Vinício Gomes</a>
     <button class="hamburguer"></button>
     <ul class="nav-list">
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#contact">Contato</a></li>
+      <li><a href="#about" class="menu-about">Sobre</a></li>
+      <li><a href="#projects" class="menu-projects">Projetos</a></li>
+      <li><a href="#contact" class="menu-contact">Contato</a></li>
     </ul>
   </nav>
 </header>
@@ -63,7 +63,7 @@
         <p class="project-description">
           Este foi meu primeiro projeto utilizando JavaScript, além dele fiz uso
           do HTML5 e CSS3 para criação de um formulário (com validação dos campos)
-          que cálcula o Índice de Massa Corpórea (IMC) mediante dados informados
+          que calcula o Índice de Massa Corpórea (IMC) mediante dados informados
           pelo usuário.
         </p>
         <div class="project-links">
@@ -74,7 +74,7 @@
     </div>
     <div class="project">
       <div class="preview">
-        <img src="./assets/projetos-preview/projeto-relogio.png" alt="Preview do Projeto IMC" class="project-preview">
+        <img src="./assets/projetos-preview/projeto-relogio.png" alt="Preview do Projeto Relógio" class="project-preview">
       </div>
       <div class="project-text">
         <h2 class="project-title">
@@ -87,7 +87,7 @@
         </h2>
         <p class="project-description">
           Este foi meu segundo projeto utilizando JavaScript, além dele fiz uso
-          do HTML5 e CSS3 para criação da página estatíca que será constantemente
+          do HTML5 e CSS3 para criação da página estática que será constantemente
           atualizada pelo código JS.
         </p>
         <div class="project-links">
@@ -96,8 +96,83 @@
         </div>
       </div>
     </div>
+    <div class="project">
+      <div class="preview">
+        <img src="./assets/projetos-preview/preview-timer.png" alt="Preview do Projeto Timer" class="project-preview">
+      </div>
+      <div class="project-text">
+        <h2 class="project-title">
+          Timer
+          <div class="stacks">
+            <img src="./assets/html5.svg" alt="Ícone HTML5" class="stack">
+            <img src="./assets/css3.svg" alt="Ícone CSS3" class="stack">
+            <img src="./assets/js.svg" alt="Ícone JavaScript" class="stack">
+          </div>
+        </h2>
+        <p class="project-description">
+          Este projeto utiliza JavaScript, além dele fiz uso
+          do HTML5 e CSS3 para criação da página estática que será constantemente
+          atualizada pelo código JS mediante interação do usuário ao clicar nos botões.
+        </p>
+        <div class="project-links">
+          <a href="https://js-timer-ten.vercel.app" target="_blank" class="project-link">LIVE DEMO <img src="./assets/arrow.svg" alt="ícone de seta"></a>
+          <a href="https://github.com/viniciogomes92/JS/tree/main/timer" target="_blank" class="project-link">VER NO GITHUB <img src="./assets/github2.svg" alt="ícone de seta"></a>
+        </div>
+      </div>
+    </div>
+    <div class="project">
+      <div class="preview">
+        <img src="./assets/projetos-preview/preview-toDoList.png" alt="Preview do Projeto Timer" class="project-preview">
+      </div>
+      <div class="project-text">
+        <h2 class="project-title">
+          To do List
+          <div class="stacks">
+            <img src="./assets/html5.svg" alt="Ícone HTML5" class="stack">
+            <img src="./assets/css3.svg" alt="Ícone CSS3" class="stack">
+            <img src="./assets/js.svg" alt="Ícone JavaScript" class="stack">
+          </div>
+        </h2>
+        <p class="project-description">
+          Este projeto utiliza JavaScript, além dele fiz uso
+          do HTML5 e CSS3 para criação da página estática que será constantemente
+          atualizada pelo código JS mediante interação do usuário ao incluir tarefas.
+          Além disso ele pode apagar uma tarefa incluída por engano ou que já tenha sido executada.
+        </p>
+        <div class="project-links">
+          <a href="https://js-todolist-coral.vercel.app" target="_blank" class="project-link">LIVE DEMO <img src="./assets/arrow.svg" alt="ícone de seta"></a>
+          <a href="https://github.com/viniciogomes92/JS/tree/main/toDoList" target="_blank" class="project-link">VER NO GITHUB <img src="./assets/github2.svg" alt="ícone de seta"></a>
+        </div>
+      </div>
+    </div>
+    <div class="project">
+      <div class="preview">
+        <img src="./assets/projetos-preview/preview-toDoList.png" alt="Preview do Projeto Timer" class="project-preview">
+      </div>
+      <div class="project-text">
+        <h2 class="project-title">
+          To do List
+          <div class="stacks">
+            <img src="./assets/html5.svg" alt="Ícone HTML5" class="stack">
+            <img src="./assets/css3.svg" alt="Ícone CSS3" class="stack">
+            <img src="./assets/js.svg" alt="Ícone JavaScript" class="stack">
+          </div>
+        </h2>
+        <p class="project-description">
+          Este projeto utiliza JavaScript, além dele fiz uso
+          do HTML5 e CSS3 para criação da página estática que será constantemente
+          atualizada pelo código JS mediante interação do usuário ao inserir números
+          e operações aritméticas. Além disso ele faz validação para saber se é um
+          número ou operação válida.
+        </p>
+        <div class="project-links">
+          <a href="https://js-calculadora.vercel.app" target="_blank" class="project-link">LIVE DEMO <img src="./assets/arrow.svg" alt="ícone de seta"></a>
+          <a href="https://github.com/viniciogomes92/JS2/tree/main/calculadora" target="_blank" class="project-link">VER NO GITHUB <img src="./assets/github2.svg" alt="ícone de seta"></a>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <h1 class="title">Mais sobre mim</h1>
     <div class="text">
       <p class="text">
@@ -109,8 +184,8 @@
         SAMBA4, Wordpress, Drupal e Ubuntu Linux. Hoje estou me especializando na área de Desenvolvimento e busco oportunidades
         para aplicar e aprimorar meu conhecimento. Desde já agradeço por sua atenção, volte sempre!
       </p>
-      <div class="links">
-        <button onclick="location.href='https://wa.me/5521993236766?text=Ol%C3%A1%2C%20Vin%C3%ADcio.%20Tudo%20bem%3F%20Sou%20'" class="contact">CONTATO</button>
+      <div class="links" id="contact">
+        <button onclick="location.href='https://wa.me/5521993236766?text=Ol%C3%A1%2C%20Vin%C3%ADcio.%20Tudo%20bem%3F%20Sou%20'" class="contact">FALE COMIGO</button>
         <a href="https://www.linkedin.com/in/vinicio-da-silva-gomes/" target="_blank"><img src="./assets/linkedin.svg" alt="ícone do linkedin" class="link"></a>
         <a href="https://github.com/viniciogomes92" target="_blank"><img src="./assets/github.svg" alt="ícone do github" class="link"></a>
       </div>
