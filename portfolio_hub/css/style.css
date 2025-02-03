@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+/* Estilização do Menu */
+
+a:hover {
+  opacity: 0px;
+}
+
+.header {
+  padding-inline: 16px;
+}
+
+.title {
+  font-family: "Bebas Neue", serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  color: #C7C7C7;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 18px;
+  color: #C7C7C7;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding-block: 16px;
+}
+
+.hamburguer {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #C7C7C7;
+  cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+  content: "  ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #C7C7C7;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Estilização da Página */
+
+section {
+  display: flex;
+  margin-block: 5%;
+  align-items: center;
+  border-bottom: 0.5px solid #484848;
+  padding-bottom: 5%;
+}
+
+h1.title {
+  margin-bottom: 10%;
+  font-size: 101px;
+}
+
+.text {
+  color: #C7C7C7;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  text-align: justify;
+  width: 100%;
+}
+
+div.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5%;
+}
+
+button.contact {
+  background: #D3E97A;
+  border: none;
+  width: 187px;
+  height: 54px;
+  border-radius: 100px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.img-web {
+  border-radius: 10px;
+}
+
+.img-mobile {
+  display: none;
+}
+
+div.text {
+  width: 50%;
+  padding: 5%;
+}
+
+section.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div.project {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding: 5%;
+}
+
+img.project-preview {
+  max-width: 350px;
+}
+
+div.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+img.stack {
+  max-width: 50px;
+}
+
+div.project-text h2 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: #C7C7C7;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  text-align: justify;
+}
+
+div.project-text p {
+  color: #C7C7C7;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  text-align: justify;
+}
+
+div.project-links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+a.project-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #D3E97A;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  text-align: justify;
+  text-decoration: none;
+  border-bottom: 2px solid #D3E97A;
+}
+
+section.about {
+  padding: 5%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 2.5%;
+}
+
+p.footer {
+  text-align: center;
+  color: #C7C7C7;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {  
+  /* Estilização do Menu Mobile */
+  
+  .hamburguer {
+    display: block;
+    z-index: 1;
+  }
+  
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #C7C7C7;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    color: black;
+    font-size: 24px;
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  /* Menu Mobile Ativo */
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburguer {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburguer::before {
+    transform: rotate(135deg);
+    background: black;
+  }
+
+  .nav.active .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+    background: black;
+  }
+
+  /* Estilização da Página Mobile */
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 5%;
+  }
+
+  div.text {
+    width: 100%;
+  }
+
+  div.text h1 {
+    font-size: 57px;
+    text-align: left;
+  }
+
+  section p {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .img-web {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+    width: 250px;
+    border-radius: 10px;
+  }
+
+  div.project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img.project-preview {
+    max-width: 300px;
+  }
+
+  img.stack {
+    max-width: 30px;
+  }
+
+  h2.project-title {
+    flex-direction: column;
+  }
+
+  div.project-text h2 {
+    font-size: 24px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  div.project-text p {
+    font-size: 16px;
+  }
+
+  div.project-links {
+    justify-content: center;
+  }
+
+  a.project-link {
+    gap: 0px;
+  }
+}
