@@ -37,10 +37,17 @@ a:hover {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 1280px;
+  justify-content: space-around;
+  max-width: 100vw;
   height: 70px;
   margin-inline: auto;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-inline: 5%;
 }
 
 .nav-list {
@@ -287,7 +294,7 @@ p.footer {
   .nav.active .hamburguer {
     position: fixed;
     top: 26px;
-    right: 16px;
+    right: 50px;
     border-top-color: transparent;
   }
 
@@ -309,6 +316,7 @@ p.footer {
     align-items: center;
     gap: 50px;
     padding: 5%;
+    margin-block: 10%;
   }
 
   div.text {
