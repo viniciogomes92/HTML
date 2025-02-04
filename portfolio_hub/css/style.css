@@ -16,11 +16,41 @@ body {
   background-color: black;
 }
 
-/* Estilização do Menu */
+
 
 a:hover {
   opacity: 0px;
 }
+
+/* Efeitos da Página */
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 2s;
+}
+
+.project.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.project.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+/* Estilização do Menu */
 
 .header {
   padding-inline: 16px;
