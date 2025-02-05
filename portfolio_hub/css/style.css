@@ -30,7 +30,7 @@ a.project-link:hover {
 
 .hidden {
   opacity: 0;
-  filter: blur(15px);
+  filter: blur(10px);
   transition: all 2s;
 }
 
@@ -40,14 +40,28 @@ a.project-link:hover {
   transition: all 2s;
 }
 
-.project.hidden {
+.preview.hidden {
   opacity: 0;
-  filter: blur(15px);
+  filter: blur(10px);
   transform: translateX(-100%);
   transition: all 2s;
 }
 
-.project.show {
+.preview.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.project-text.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(100%);
+  transition: all 2s;
+}
+
+.project-text.show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
@@ -80,7 +94,7 @@ a.project-link:hover {
   max-width: 100vw;
   height: 70px;
   margin-inline: auto;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: black;
   position: fixed;
   top: 0;
@@ -148,7 +162,7 @@ h1.title {
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
   width: 100%;
   text-indent: 50px;
 }
@@ -221,7 +235,7 @@ div.project-text h2 {
   font-weight: 500;
   font-style: normal;
   font-size: 32px;
-  text-align: justify;
+  text-align: left;
 }
 
 div.project-text p {
@@ -231,7 +245,7 @@ div.project-text p {
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
   text-indent: 50px;
 }
 
@@ -369,7 +383,7 @@ p.footer {
   }
 
   section p {
-    text-align: justify;
+    text-align: left;
     font-size: 16px;
   }
 
