@@ -16,13 +16,17 @@ body {
   background-color: black;
 }
 
+/* Efeitos da Página */
 
-
-a:hover {
-  opacity: 0px;
+.button:hover {
+  opacity: 0.5;
+  transition: .3s;
 }
 
-/* Efeitos da Página */
+a.project-link:hover {
+  opacity: 0.5;
+  transition: .3s;
+}
 
 .hidden {
   opacity: 0;
@@ -54,6 +58,11 @@ a:hover {
 
 .header {
   padding-inline: 16px;
+}
+
+.menu-item:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 .title {
